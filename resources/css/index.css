@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    font-family: 'Inter', sans-serif;
+}
+html{
+    height: 100%;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    min-height: 100%;
+    box-sizing: inherit;
+    padding-bottom: 5rem;
+}
+
+/* Nav bar css */
+.pink-bar{
+    width: 1.6875rem;
+    height: 0.5625rem;
+    left: 1px;
+    top: 10px;
+    background: linear-gradient(96.34deg, #E537B9 0%, #C040DF 100%);
+    border-radius: 4.5px;
+}
+.navbar-brand{
+    font-weight: 600;
+    font-size: 1.4375rem; /*23px*/
+    line-height: 1.5rem;  /*24px*/
+    letter-spacing: 0.125rem; /*2px*/
+    color: #292B2E;
+}
+.today-heading{
+    font-weight: 600;
+    font-size: 1.5rem;  /*24px*/
+    line-height: 2rem; /*32px*/
+    color: #252B42;
+}
+.subheading{
+    font-weight: 400;
+    font-size: 1.125rem; /*18px*/
+    line-height: 1.75rem; /*28px*/
+    color: #858585;
+}
+
+/* Accoridion css */
+.icon::before{
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+.accordion-header1{
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.5rem;  /*24px*/
+    letter-spacing: 0.1px;
+    color: #737373;
+    margin-bottom: 0;
+}
+.accordion-button::after {
+    font: var(--fa-font-solid);
+    content: "\f078";
+    order:-1;
+    margin-left: 0px;
+    margin-right: 1rem;
+    background-image: unset;
+    font-size: 1rem;
+    line-height: 106.25%;
+    letter-spacing: 0.1px;
+    color: #737373;
+    
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: unset;
+    transform: rotateX(-180deg);
+}
+.accordion-body {
+    padding: 1rem 1.25rem;
+    padding-left: 2.2rem;
+}
+.accordion-item{
+    border: 0;
+}
+.accordion-button:focus {
+    box-shadow: unset;
+}
+.accordion-button:not(.collapsed) {
+    color: #0c63e4;
+    background-color: unset;
+    box-shadow: unset;
+}
+
+/* Carousel css */
+.carousel-inner{
+    margin-left: auto;
+    margin-right: auto;
+    width: 97%;
+    margin: auto;
+}
+.carousel-control-next,.carousel-control-prev{
+    margin: -1rem ;
+    width: 1.25rem;
+    background: none;
+    border-radius: 10px;
+    opacity: 1;
+    margin-top:0;
+    margin-bottom: 0;
+}
+.carousel-control-next-icon,.carousel-control-prev-icon{
+    background-image: unset;
+}
+.carousel-control-next-icon::before {
+    
+    font: var(--fa-font-solid);
+    content: "\f054";
+    font-size: 1rem;
+    color: #737373;
+    line-height: 106.25%;
+    letter-spacing: 0.1px
+    
+}
+.carousel-control-prev-icon::before{
+    font: var(--fa-font-solid);
+    content: "\f053";
+    font-size: 1rem;
+    color: #737373;
+    line-height: 106.25%;
+    letter-spacing: 0.1px
+}
+
+
+/* card css */
+.card{
+    border:0;
+    /* height: 651.2px; */
+    height: 40.7rem;
+}
+.card-img-top{
+    /* height: auto; */
+    height: 202px;
+    /* object-fit: unset; */
+    object-fit: cover;
+}
+.card-title{
+    font-weight: 700;
+    font-size: 1.5rem;  /*24px*/
+    line-height: 2rem; /*32px*/
+    letter-spacing: 0.1px;
+    color: #292B2E;
+}
+.author{
+    font-weight: 600;
+    font-size: 0.8125rem; /*13px*/
+    line-height: 1.75rem; /*28px*/
+    letter-spacing: 0.2px;
+    color: #586069;
+
+}
+.card-text{
+    font-weight: 500;
+    font-size: 1rem;  /*16px*/
+    line-height: 1.625rem;  /*26px*/
+    letter-spacing: 0.2px;
+    color: #292B2E;
+
+}
+
+/* footer css */
+footer{
+    background: #f1f1f1;
+    width: 100%;
+    padding: 1rem 0rem;
+    color: #999;
+    position: absolute;
+    bottom: 0;
+  }
+
+  footer a{
+    text-decoration: none;
+    color: inherit;
+  }
+
+
+
+/* Responsive css for small screens */
+@media (min-width:992px){
+    .carousel-control-next,.carousel-control-prev{
+    background: #F6F8FA;
+    }
+    .card{
+        /* height: 632px; */
+        height: 39.5rem;
+    }
+    .card-img-top{
+    /* height: 462px; */
+    height: 28.875rem;
+    object-fit: cover;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px){
+    .card{
+        /* height: 480px; */
+        height: 30rem;
+
+    }
+}
